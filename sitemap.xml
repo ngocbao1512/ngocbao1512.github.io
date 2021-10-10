@@ -3,16 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://ngocbao1512.github.io/categories/</loc>
-    <lastmod>2021-10-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ngocbao1512.github.io/categories/first/</loc>
-    <lastmod>2021-10-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ngocbao1512.github.io/post/first_post/</loc>
     <lastmod>2021-10-09T00:00:00+00:00</lastmod>
   </url>
@@ -38,6 +28,31 @@
   </url>
   
   <url>
+    <loc>https://ngocbao1512.github.io/categories/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngocbao1512.github.io/post/cac_lenh_linux_co_ban/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngocbao1512.github.io/tags/lenhcobanlinux/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngocbao1512.github.io/tags/linux/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ngocbao1512.github.io/categories/web/</loc>
+    <lastmod>2020-10-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://ngocbao1512.github.io/search/placeholder/</loc>
   </url>
   
@@ -47,6 +62,10 @@
   
   <url>
     <loc>https://ngocbao1512.github.io/top/life/</loc>
+  </url>
+  
+  <url>
+    <loc>https://ngocbao1512.github.io/top/web/</loc>
   </url>
   
   <url>

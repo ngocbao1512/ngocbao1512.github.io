@@ -1,24 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Ng Ba.o Blog</title>
-    <link>https://ngocbao1512.github.io/post/</link>
-    <description>Recent content in Posts on Ng Ba.o Blog</description>
+    <title>WEB on Ng Ba.o Blog</title>
+    <link>https://ngocbao1512.github.io/categories/web/</link>
+    <description>Recent content in WEB on Ng Ba.o Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 Oct 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://ngocbao1512.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ngocbao1512.github.io/categories/web/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>first post</title>
-      <link>https://ngocbao1512.github.io/post/first_post/</link>
-      <pubDate>Sat, 09 Oct 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://ngocbao1512.github.io/post/first_post/</guid>
-      <description>This is first Post</description>
-    </item>
     
     <item>
       <title>Các Lệnh Linux Cơ Bản</title>

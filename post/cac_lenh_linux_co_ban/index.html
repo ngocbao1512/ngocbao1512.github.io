@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="Các Lệnh Linux Cơ Bản" />
+    <meta property="og:title" content="Các Lệnh Linux Cơ Bản" />
+    <meta property="twitter:title" content="Các Lệnh Linux Cơ Bản" />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Ng Ba.o | Ng Ba.o Blog</title>
+    <title>Các Lệnh Linux Cơ Bản-Ng Ba.o | Ng Ba.o Blog</title>
 
-    <link rel="canonical" href="/top/life/">
+    <link rel="canonical" href="/post/cac_lenh_linux_co_ban/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 
@@ -148,14 +148,45 @@
 
 
 
-<header class="intro-header" style="background-image: url('/img/404_img.jpeg')">
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('https://adminscriptbank.files.wordpress.com/2016/09/banner_linux.png')
+    }
+</style>
+
+<header class="intro-header" >
+
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>Ng Ba.o Blog </h1>
-                    
-		    <span class="subheading">Tập tành viết, chia sẻ thứ mình học được. </span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/linux" title="linux">
+                            linux
+                        </a>
+                        
+                        <a class="tag" href="/tags/lenhcobanlinux" title="lenhcobanlinux">
+                            lenhcobanlinux
+                        </a>
+                        
+                    </div>
+                    <h1>Các Lệnh Linux Cơ Bản</h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                     ng Ba.o
+                             
+                            on 
+                            Friday, October 9, 2020
+                            
+                            
+                            
+                            
+                    </span>
                 </div>
             </div>
         </div>
@@ -171,17 +202,122 @@
 
             
             <div class="
-                col-lg-11 col-lg-offset-1
+                col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 post-container">
 
-         	
+                
+                <h1 id="các-lệnh-cơ-bản-trong-linux---linux-commands">Các lệnh cơ bản trong Linux - Linux Commands</h1>
+<blockquote>
+<p>hello mn, hnay mình sẽ giới thiệu các câu lệnh cơ bản để làm việc trong hệ điều hành linux.</p>
+</blockquote>
+<p>
+  <img src="https://www.gizbot.com/img/2020/02/10-must-know-run-commands-for-every-windows-user-1581766388.jpg" alt="!">
+
+</p>
+<h5 id="1-pwd-command">1. PWD COMMAND</h5>
+<p>Check đường dẫn thư mục hiện tại</p>
+<h5 id="2-mkdir">2. MKDIR</h5>
+<p>Tạo Thư mục mới</p>
+<pre><code>ex : mkdir workspace
+</code></pre><h5 id="3-touch">3. TOUCH</h5>
+<p>Tạo file mới</p>
+<pre><code>ex : touch index.php
+</code></pre><h5 id="4-ls">4. LS</h5>
+<p>hiện thị các file ở thư mục hiện tại</p>
+<h5 id="5-ls--ls-and-ll">5. LS -LS AND LL</h5>
+<p>hiện thị tất cả các file ở thư mục hiện tại <strong>kể cả file ẩn</strong> và quyền của file</p>
+<h5 id="6-cd">6. CD</h5>
+<p>chuyển hướng tới file làm việc</p>
+<ul>
+<li>cd .. chuyển lên 1 cấp thư mục trên</li>
+<li>cd ~  chuyển đến home</li>
+<li>cd + đường dẫn : chuyển đến file làm việc ( đường dẫn phải tồn tại trong thư mục hiện tại )</li>
+</ul>
+<pre><code>ex : cd /home/username/workspace
+</code></pre><h5 id="7-cat">7. CAT</h5>
+<p>xem nội dung của file</p>
+<pre><code>ex: cat index.php
+</code></pre><h5 id="8-head">8. HEAD</h5>
+<p>xem dòng đầu tiên của file được chỉ định</p>
+<pre><code>ex: head index.php 
+</code></pre><h5 id="9-tail">9. Tail</h5>
+<p>xem dòng cuối cùng của file được chỉ định</p>
+<pre><code>ex: tail index.php 
+</code></pre><h5 id="10-cp">10. CP</h5>
+<p>copy file vào thư mục làm việc khác</p>
+<pre><code>ex: cp index.php workspace 
+</code></pre><h5 id="11-mv">11. MV</h5>
+<p>di chuyển file vào thư mục làm việc khác</p>
+<pre><code>ex: mv index.php workspace 
+</code></pre><h5 id="12-rm">12. RM</h5>
+<p>cho phép bạn xóa 1 file nếu có quyền</p>
+<pre><code>ex: rm index.php
+</code></pre><h5 id="13-rmdir">13. RMDIR</h5>
+<p>cho phép bạn xóa 1 thư mục trống</p>
+<pre><code>ex: rmdir workspace
+</code></pre><h5 id="14-rm--rf">14. RM -RF</h5>
+<p>cho phép bạn xóa 1 thư mục được chỉ định nếu có đủ quền</p>
+<pre><code>ex: rm -rf workspace
+</code></pre><blockquote>
+<p>trường hợp xóa file, folder nhưng không đủ quền thì mình phân lại quyền khoặc thêm lệnh sudo trước lệnh xóa</p>
+</blockquote>
+<h5 id="15-subl--đường-dẫn-file">15. subl + đường dẫn file</h5>
+<p>mở file với subl (máy phải cài subl sẵn)</p>
+<pre><code>ex: subl index.php
+</code></pre><h5 id="16-code--đường-dẫn-file">16. code + đường dẫn file</h5>
+<p>mở file với visualcode (máy phải cài visual và config một ít)</p>
+<pre><code>ex: code index.php
+</code></pre><h1 id="phím-tắt-cơ-bản">PHÍM TẮT CƠ BẢN</h1>
+<h5 id="ctrl--alt--t">CTRL + ALT + T</h5>
+<p>mở terminal</p>
+<h5 id="ctrl--a">CTRL + A</h5>
+<p>nhảy về đầu dòng lệnh</p>
+<h5 id="ctrl--u">CTRL + U</h5>
+<p>lưu lại lệnh đang nhập để thực thi lệnh khác</p>
+<h5 id="ctrl--y">CTRL + Y</h5>
+<p>sử dụng lệnh vừa CTRL + U</p>
+<h5 id="ctrl--q">CTRL + Q</h5>
+<p>tắt ứng dụng hiện tại</p>
+<h5 id="tab">Tab</h5>
+<p>hỗ trợ gợi ý gõ lệnh nhanh hơn.</p>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/post/first_post/" data-toggle="tooltip" data-placement="top" title="first post">Next
+                            Post &rarr;</a>
+                    </li>
+                    
+                </ul>
                 
 <div id="disqus-comment"></div>
 
 
-
             </div>
+
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
             
             <div class="
                 col-lg-11 col-lg-offset-1
