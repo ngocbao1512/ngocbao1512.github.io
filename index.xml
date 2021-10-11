@@ -21,6 +21,17 @@
     </item>
     
     <item>
+      <title>Phần Quyền Trong Linux </title>
+      <link>https://ngocbao1512.github.io/post/phan_quyen_cho_file_trong_linux/</link>
+      <pubDate>Sun, 11 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngocbao1512.github.io/post/phan_quyen_cho_file_trong_linux/</guid>
+      <description>Giới Thiệu trong bài này mình sẽ giới thiệu các bạn cách phân quyền trong linux. phân quyền thì không mới nhưng vẫn là một khái niệm khá lạ với các bạn chuyển từ window qua linux.
+trong linux thì mỗi file sẽ được quản lý bởi 3 đối tượng user ,group, other User người tạo ra file hay thư mục đấy
+Group một nhóm người dùng có chung quyền truy cập file hay thư mục đó</description>
+    </item>
+    
+    <item>
       <title>Các Lệnh Linux Cơ Bản</title>
       <link>https://ngocbao1512.github.io/post/cac_lenh_linux_co_ban/</link>
       <pubDate>Fri, 09 Oct 2020 00:00:00 +0000</pubDate>

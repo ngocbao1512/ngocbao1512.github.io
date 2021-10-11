@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="first_post" />
-    <meta property="og:title" content="first_post" />
-    <meta property="twitter:title" content="first_post" />
+    <meta name="title" content="Phần Quyền Trong Linux " />
+    <meta property="og:title" content="Phần Quyền Trong Linux " />
+    <meta property="twitter:title" content="Phần Quyền Trong Linux " />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>first_post-Ng Ba.o | Ng Ba.o Blog</title>
+    <title>Phần Quyền Trong Linux -Ng Ba.o | Ng Ba.o Blog</title>
 
-    <link rel="canonical" href="/tags/first_post/">
+    <link rel="canonical" href="/post/phan_quyen_cho_file_trong_linux/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 
@@ -148,14 +148,45 @@
 
 
 
-<header class="intro-header" style="background-image: url('/img/404_img.jpeg')">
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('/img/phan_quen_file.jpeg')
+    }
+</style>
+
+<header class="intro-header" >
+
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>Ng Ba.o Blog </h1>
-                    
-		    <span class="subheading">Tập tành viết, chia sẻ thứ mình học được. </span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/linux" title="linux">
+                            linux
+                        </a>
+                        
+                        <a class="tag" href="/tags/phanquen" title="phanquen">
+                            phanquen
+                        </a>
+                        
+                    </div>
+                    <h1>Phần Quyền Trong Linux </h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                     bao
+                             
+                            on 
+                            Sunday, October 11, 2020
+                            
+                            
+                            
+                            
+                    </span>
                 </div>
             </div>
         </div>
@@ -164,165 +195,200 @@
 
 
 
-  
-<div class="container">
-    <div class="row">
-        
-        
-   	    <div class="
-            col-lg-8 col-lg-offset-1
-            col-md-8 col-md-offset-1
-            col-sm-12
-            col-xs-12
-            post-container
-        ">
-            
 
-<div class="post-preview">
-    <a href="https://ngocbao1512.github.io/post/first_post/">
-        <h2 class="post-title">
-            first post
-        </h2>
-	
-        <div class="post-content-preview">
-	
-            This is first Post
-       
-        </div>
-    </a>
-    <p class="post-meta">
-    
-        Posted by     ng Bao  Saturday, October 9, 2021
-        
-        
-    
-    </p>
-
-</div>
-<hr>
-
+<article>
+    <div class="container">
+        <div class="row">
 
             
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                
+                <h1 id="giới-thiệu">Giới Thiệu</h1>
+<p>trong bài này mình sẽ giới thiệu các bạn cách phân quyền trong linux. phân quyền thì không mới nhưng vẫn là một khái niệm khá lạ với các bạn chuyển từ window qua linux.</p>
+<h2 id="trong-linux-thì-mỗi-file-sẽ-được-quản-lý-bởi-3-đối-tượng-user-group-other">trong linux thì mỗi file sẽ được quản lý bởi 3 đối tượng <strong>user</strong> ,<strong>group</strong>, <strong>other</strong></h2>
+<h4 id="user">User</h4>
+<p>người tạo ra file hay thư mục đấy</p>
+<h4 id="group">Group</h4>
+<p>một nhóm người dùng có chung quyền truy cập file hay thư mục đó</p>
+<h4 id="other">Other</h4>
+<p>những người khác không thuộc hai đối tượng trên</p>
+<h2 id="quyền-của-một-file">Quyền của một file</h2>
+<p>mỗi file hay thư mục đều có 3 read, write, excute được xác định cho đối tượng trên</p>
+<ul>
+<li><strong>READ</strong> : đọc, quyền này cho phép bạn mở file đấy lên để đọc hay là thư mục đấy lên để xem bên trong nó có gì</li>
+<li><strong>WRITE</strong> : viết, quyền này cho phép bạn mở file đấy lên sửa đổi nội dung file, hay là thêm xóa đổi tên file trong thư mục</li>
+<li><strong>EXECUTE</strong> : thực thi, quyền này cho phép bạn thực thi file hay là vào thư mục</li>
+</ul>
+<h1 id="phân-quyền">PHÂN QUYỀN</h1>
+<h4 id="kiểm-tra-quyền">KIỂM TRA QUYỀN</h4>
+<p>để kiểm tra quyền của file hay thư mục:</p>
+<pre><code>ll
+</code></pre><p>or</p>
+<pre><code>ls -la
+</code></pre><p>ex : 
+  <img src="https://ngocbao1512.github.io/img/phan_quen1.png" alt="image phan quyen">
+
+</p>
+<p>bạn sẽ thấy 6 kí tự biểu thị quyền của file hay 1 folder nó trông như thế này</p>
+<pre><code>drwxrwxr-x hay là như thế này -rw-rw-r--
+</code></pre><ul>
+<li>kí tự đầu tiên : chữ d biểu thị đấy là 1 folder còn - biểu thị là 1 file</li>
+<li>3 kí tự tiếp theo biểu thị quyền của user đổi với file hay folder đấy (r : read, w : write, x : execute, - : không có quyền)</li>
+<li>3 kí tự tiếp theo biểu thị quyền của group</li>
+<li>3 kí tự cuối biểu thị quyền của other</li>
+</ul>
+<h4 id="thay-đổi-quyền-với-chmod">THAY ĐỔI QUYỀN VỚI CHMOD</h4>
+<p><strong>Phân quyền bằng chữ</strong></p>
+<p>vd phân quyền với toán tử =</p>
+<pre><code>chmod u=r,g=rwx,o=wx &lt;filename&gt;
+</code></pre><p>vd phân quyền với toán tử + -</p>
+<pre><code>chmod u+x,g+x-w &lt;filename&gt;
+</code></pre><p><strong>Phân quyền bằng số</strong></p>
+<pre><code>chmod [permissions] &lt;filename&gt;
+</code></pre><p>permissions : gồm 3 chữ số các chữ số lần lượt thể hiện quyền cho user, group, other</p>
+<table>
+<thead>
+<tr>
+<th>số</th>
+<th>quyền chữ</th>
+<th>quyền số</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>&mdash;</td>
+<td>không có quyền</td>
+</tr>
+<tr>
+<td>1</td>
+<td>&ndash;x</td>
+<td>excute</td>
+</tr>
+<tr>
+<td>2</td>
+<td>-w-</td>
+<td>write</td>
+</tr>
+<tr>
+<td>3</td>
+<td>-wx</td>
+<td>excute and write</td>
+</tr>
+<tr>
+<td>4</td>
+<td>r&ndash;</td>
+<td>read</td>
+</tr>
+<tr>
+<td>5</td>
+<td>r-x</td>
+<td>read and excute</td>
+</tr>
+<tr>
+<td>6</td>
+<td>rw-</td>
+<td>read and write</td>
+</tr>
+<tr>
+<td>7</td>
+<td>rwx</td>
+<td>read write and execute</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>để nhớ nhanh bảng ở trên thì bạn nhớ quyền 1, 2, 4. các quyền khác đều là  tổng của các quyền này cộng lại</p>
+</blockquote>
+<p>vd phân quyền bằng số :</p>
+<pre><code>chmod 423 index.php
+</code></pre><p>giải thích :
+phân quyền 4 (read) cho user, quyền 2 (write) cho group, quyền 3 (write and excute) cho other</p>
+<blockquote>
+<p>bài của mình còn nhiều thiếu sót bạn nên tham khảo thêm tài liệu khác. cảm ơn!</p>
+</blockquote>
 
 
+                
 
-       	</div>
-        
-
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-    
-    <section>
-        <hr class="hidden-sm hidden-xs">
-        <h5>FEATURED TAGS</h5>
-        <div class="tags">
-            
-            
-               
-            
-               
-            
-               
-                    <a href="/tags/linux" title="linux">
-                        linux
-                    </a>
-               
-            
-               
-            
-        </div>
-    </section>
-    
-
-    
-	
-    <section class="visible-md visible-lg">
-	<hr><h5><a href="/top/about">ABOUT ME</a></h5>
-        <div class="short-about">
-            
-            <a href="/top/about">
-               <img src="/img/banner.jpeg" alt="avatar" style="cursor: pointer" />
-            </a>
-            
-            
-                <p>Thợ Code</p>
-            
-           
-           <ul class="list-inline">
-               
-               <li>
-                   <a href='/tags/first_post/index.xml' rel="alternate" type="application/rss+xml" title="Ng Ba.o Blog" >
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               
-               <li>
-                   <a target="_blank" href="facebook.com/baobao080901/">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               <li>
-                   <a target="_blank" href="https://github.com/ngocbao1512">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-github fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
-               
-               
-               
-               
-            
-            
-               
-               
-               
-               <li>
-                   <a target="_blank" href="https://www.instagram.com/ngocbao089/">
-                       <span class="fa-stack fa-lg">
-                           <i class="fas fa-circle fa-stack-2x"></i>
-                           <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
-                       </span>
-                   </a>
-               </li>
-               
-               
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/cac_lenh_linux_co_ban/" data-toggle="tooltip" data-placement="top" title="Các Lệnh Linux Cơ Bản">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                    <li class="next">
+                        <a href="/post/first_post/" data-toggle="tooltip" data-placement="top" title="first post">Next
+                            Post &rarr;</a>
+                    </li>
+                    
                 </ul>
+                
+<div id="disqus-comment"></div>
+
+
             </div>
-    </section>
-	
-    
-    
 
-    
-    
-</div>
+            
+            
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
 
-	</div>
-</div>
+            
+            <div class="
+                col-lg-11 col-lg-offset-1
+                col-md-10 col-md-offset-1
+                sidebar-container">
 
+                
+                
+                <section>
+                    <hr class="hidden-sm hidden-xs">
+                    <h5><a href="/tags/">FEATURED TAGS</a></h5>
+                    <div class="tags">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="/tags/linux" title="linux">
+                            linux
+                        </a>
+                        
+                        
+                        
+                        
+                    </div>
+                </section>
+                
+
+                
+                
+            </div>
+        </div>
+    </div>
+</article>
 
 
 
@@ -334,7 +400,7 @@
                 <ul class="list-inline text-center">
                    
                    <li>
-                       <a href='/tags/first_post/index.xml' rel="alternate" type="application/rss+xml" title="Ng Ba.o Blog" >
+                       <a href='' rel="alternate" type="application/rss+xml" title="Ng Ba.o Blog" >
                            <span class="fa-stack fa-lg">
                                <i class="fas fa-circle fa-stack-2x"></i>
                                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
