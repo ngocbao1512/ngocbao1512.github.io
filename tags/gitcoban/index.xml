@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gitcoban on Ng Ba.o Blog</title>
+    <link>https://ngocbao1512.github.io/tags/gitcoban/</link>
+    <description>Recent content in gitcoban on Ng Ba.o Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Oct 2021 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://ngocbao1512.github.io/tags/gitcoban/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Đẩy Code Lên GitHub </title>
+      <link>https://ngocbao1512.github.io/post/day_code_len_github/</link>
+      <pubDate>Tue, 12 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://ngocbao1512.github.io/post/day_code_len_github/</guid>
+      <description>Giới Thiệu Có nhiều bạn mới học lập trình được giáo viên yêu câù nộp bài tập qua github, hay các bạn cuối kì làm xong bài tập đồ án. muốn lưu lại code, để nhỡ sau muốn học lại học cải thiện. nên hôm nay mình sẽ hướng dẫn các bạn cách đẩy code lên github
+Giới thiệu qua về github thì nó là một hệ thống quản lý dự án và code, hoạt động giống như một mạng xã hội cho lập trình viên.</description>
+    </item>
+    
+  </channel>
+</rss>

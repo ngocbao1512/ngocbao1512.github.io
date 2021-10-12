@@ -15,9 +15,9 @@
     
 
     
-    <meta name="title" content="" />
-    <meta property="og:title" content="" />
-    <meta property="twitter:title" content="" />
+    <meta name="title" content="Đẩy Code Lên GitHub " />
+    <meta property="og:title" content="Đẩy Code Lên GitHub " />
+    <meta property="twitter:title" content="Đẩy Code Lên GitHub " />
     
 
     
@@ -34,9 +34,9 @@
     <meta name="keyword"  content="">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Categories-Ng Ba.o | Ng Ba.o Blog</title>
+    <title>Đẩy Code Lên GitHub -Ng Ba.o | Ng Ba.o Blog</title>
 
-    <link rel="canonical" href="/categories/">
+    <link rel="canonical" href="/post/day_code_len_github/">
 
     <link rel="stylesheet" href="/css/iDisqus.min.css"/>
 
@@ -148,14 +148,45 @@
 
 
 
-<header class="intro-header" style="background-image: url('/img/404_img.jpeg')">
+
+<style type="text/css">
+    header.intro-header {
+        background-image: url('https://v2d27.github.io/IoT/image/github.png')
+    }
+</style>
+
+<header class="intro-header" >
+
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
-                <div class="site-heading">
-                    <h1>Ng Ba.o Blog </h1>
-                    
-		    <span class="subheading">Tập tành viết, chia sẻ thứ mình học được. </span>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/tags/git" title="git">
+                            git
+                        </a>
+                        
+                        <a class="tag" href="/tags/gitcoban" title="gitcoban">
+                            gitcoban
+                        </a>
+                        
+                    </div>
+                    <h1>Đẩy Code Lên GitHub </h1>
+                    <h2 class="subheading"></h2>
+                    <span class="meta">
+                        
+                            Posted by 
+                            
+                                     bao
+                             
+                            on 
+                            Tuesday, October 12, 2021
+                            
+                            
+                            
+                            
+                    </span>
                 </div>
             </div>
         </div>
@@ -168,22 +199,106 @@
 <article>
     <div class="container">
         <div class="row">
+
             
             <div class="
                 col-lg-8 col-lg-offset-2
                 col-md-10 col-md-offset-1
                 post-container">
 
-         	
+                
+                <h2 id="giới-thiệu">Giới Thiệu</h2>
+<p>Có nhiều bạn mới học lập trình được giáo viên yêu câù nộp bài tập qua github, hay các bạn cuối kì làm xong bài tập đồ án. muốn lưu lại code, để nhỡ sau muốn học lại học cải thiện. nên hôm nay mình sẽ hướng dẫn các bạn cách đẩy code lên github</p>
+<p>Giới thiệu qua về github thì nó là một hệ thống quản lý dự án và code, hoạt động giống như một mạng xã hội cho lập trình viên.</p>
+<h3 id="thực-hiện">Thực Hiện</h3>
+<ul>
+<li>
+<p>Bước 1 : trước tiên đối với các bạn dùng window mà chưa cài git, hãy download theo link sau: <a href="https://git-scm.com/downloads">Download Git</a></p>
+<p>sau khi down load xong bạn có thể kiểm tra bằng lệnh</p>
+<pre><code>git --version
+</code></pre></li>
+<li>
+<p>Bước 2 : tạo 1  <a href="https://github.com/signup?ref_cta=Sign+up&amp;ref_loc=header+logged+out&amp;ref_page=%2F&amp;source=header-home">tài khoản github</a></p>
+</li>
+<li>
+<p>Bước 3 : tạo 1 repository mới trên github
+click vào dấu cộng bên phải trên thanh ba trên cùng. chọn <strong>New repository</strong> -&gt; nhập Repository Name(tên project của bạn), Description, chọn chế độ Public or Private -&gt; <strong>Create Repository</strong></p>
+<p>
+  <img src="https://github.com/ngocbao1512/ngocbao1512.github.io/blob/master/img/create_repo.png" alt="create repo">
+
+</p>
+</li>
+<li>
+<p>Bước 4 : clone repository về máy</p>
+<p>bạn copy link url của repository vừa tạo và dùng lệnh sau để clone về máy</p>
+<pre><code>git clone &lt;link repo&gt;
+</code></pre><p>vd</p>
+<pre><code>git clone https://github.com/ngocbao1512/CSDL-QUAN_LY_THUOC.git
+</code></pre><p>
+  <img src="https://github.com/ngocbao1512/ngocbao1512.github.io/blob/master/img/gitclone.png" alt="create repo">
+
+</p>
+</li>
+<li>
+<p>Bước 5 : Thêm Sửa xóa file
+clone xong thì bạn sẽ có một folder giống với tên repo mà bạn đã tạo, lúc này bạn thêm các file, folder cần lưu vào folder mới này.</p>
+</li>
+<li>
+<p>Bước 6 : Push Code
+bạn mở terminal lên và cd đến folder mình clone về, hoặc mở visual studio code rồi mở thư mục mình clone về và bật terminal trong visual studio code. và bắt đầu nhập lệnh.</p>
+<pre><code>git config --global user.name &lt;username&gt;
+git config --global user.email &lt;mailaddress&gt;
+</code></pre><p>sau khi config username và email thì bạn nhập tiếp lệnh này để push code lên</p>
+<pre><code>git add .
+git commit -m &quot;message commit&quot;
+git push origin master 
+</code></pre><p>
+  <img src="https://github.com/ngocbao1512/ngocbao1512.github.io/blob/master/img/pushcode.png" alt="push code">
+
+
+đến bước này, thì bạn đã hoàn thành đẩy code lên github thành công. bạn lên github vào repo của bạn check lại. chúc các bạn thành công !..</p>
+</li>
+</ul>
+
+
+                
+
+                <hr>
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/post/first_post/" data-toggle="tooltip" data-placement="top" title="first post">&larr;
+                            Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
                 
 <div id="disqus-comment"></div>
 
 
-
             </div>
+
+            
             
             <div class="
-                col-lg-8 col-lg-offset-2
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+            
+
+            
+            <div class="
+                col-lg-11 col-lg-offset-1
                 col-md-10 col-md-offset-1
                 sidebar-container">
 
@@ -205,7 +320,7 @@
                         
                         
                         <a href="/tags/linux" title="linux">
-                        linux
+                            linux
                         </a>
                         
                         
@@ -232,7 +347,7 @@
                 <ul class="list-inline text-center">
                    
                    <li>
-                       <a href='/categories/index.xml' rel="alternate" type="application/rss+xml" title="Ng Ba.o Blog" >
+                       <a href='' rel="alternate" type="application/rss+xml" title="Ng Ba.o Blog" >
                            <span class="fa-stack fa-lg">
                                <i class="fas fa-circle fa-stack-2x"></i>
                                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
